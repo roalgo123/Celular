@@ -1,5 +1,5 @@
 uml
-@startuml
+@startuml iPhone
 interface IReprodutorMusical {
     + tocar()
     + pausar()
