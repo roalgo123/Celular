@@ -1,0 +1,30 @@
+uml
+@startuml
+interface IReprodutorMusical {
+    + tocar()
+    + pausar()
+    + selecionarMusica()
+}
+
+interface IAparelhoTelefonico {
+    + ligar()
+    + atender()
+    + iniciarCorrerioVoz()
+}
+
+interface INavegadorInternet {
+    + exibirPagina()
+    + adicionarNovaAba()
+    + atualizarPagina()
+}
+
+class iPhone {
+    + reprodutorMusical: IReprodutorMusical
+    + aparelhoTelefonico: IAparelhoTelefonico
+    + navegadorInternet: INavegadorInternet
+}
+
+IReprodutorMusical <|-- iPhone
+IAparelhoTelefonico <|-- iPhone
+INavegadorInternet <|-- iPhone
+@enduml
